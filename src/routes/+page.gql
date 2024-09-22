@@ -1,0 +1,56 @@
+query AllEvents {
+	newWorkRequest: events(
+		where: {
+			account_address: {}
+			indexed_type: {
+				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnNewWorkRequest"
+			}
+		}
+	) {
+		data
+	}
+
+	workRequestCompleted: events(
+		where: {
+			account_address: {}
+			indexed_type: {
+				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnWorkRequestCompleted"
+			}
+		}
+	) {
+		data
+	}
+
+	newBids: events(
+		where: {
+			account_address: {}
+			indexed_type: {
+				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnNewWorkRequestBid"
+			}
+		}
+	) {
+		data
+	}
+
+	bidWons: events(
+		where: {
+			account_address: {}
+			indexed_type: {
+				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnBidWon"
+			}
+		}
+	) {
+		data
+	}
+
+	auctionFailures: events(
+		where: {
+			account_address: {}
+			indexed_type: {
+				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnAuctionFailure"
+			}
+		}
+	) {
+		data
+	}
+}
