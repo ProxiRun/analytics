@@ -3,7 +3,7 @@ query AllEvents {
 		where: {
 			account_address: {}
 			indexed_type: {
-				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnNewWorkRequest"
+				_eq: "0x9476528b38675eaf7fcc4d18c9472f22efd24532cad25a27794c6f7300df06cc::proxirun::OnNewWorkRequest"
 			}
 		}
 	) {
@@ -14,7 +14,7 @@ query AllEvents {
 		where: {
 			account_address: {}
 			indexed_type: {
-				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnWorkRequestCompleted"
+				_eq: "0x9476528b38675eaf7fcc4d18c9472f22efd24532cad25a27794c6f7300df06cc::proxirun::OnWorkRequestCompleted"
 			}
 		}
 	) {
@@ -25,7 +25,7 @@ query AllEvents {
 		where: {
 			account_address: {}
 			indexed_type: {
-				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnNewWorkRequestBid"
+				_eq: "0x9476528b38675eaf7fcc4d18c9472f22efd24532cad25a27794c6f7300df06cc::proxirun::OnNewWorkRequestBid"
 			}
 		}
 	) {
@@ -36,7 +36,7 @@ query AllEvents {
 		where: {
 			account_address: {}
 			indexed_type: {
-				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnBidWon"
+				_eq: "0x9476528b38675eaf7fcc4d18c9472f22efd24532cad25a27794c6f7300df06cc::proxirun::OnBidWon"
 			}
 		}
 	) {
@@ -47,7 +47,7 @@ query AllEvents {
 		where: {
 			account_address: {}
 			indexed_type: {
-				_eq: "0xd0aaa17cc5072d219a23a3b51cc83052a2ec80746cf34cf15c57dd518af2d54::my_auction::OnAuctionFailure"
+				_eq: "0x9476528b38675eaf7fcc4d18c9472f22efd24532cad25a27794c6f7300df06cc::proxirun::OnAuctionFailure"
 			}
 		}
 	) {
